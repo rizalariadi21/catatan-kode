@@ -21,3 +21,13 @@ var myinput = document.getElementById('myinput');
 function formatNumber(num) {
     return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1.')
 }
+
+//cekbox 
+$('#cekbox').click(function () {
+			if ($(this).is(':checked')) {
+				$('#btn-submit').attr('disabled', false);
+			} else {
+				$('#btn-submit').attr('disabled', true);
+			}
+		});
+//
